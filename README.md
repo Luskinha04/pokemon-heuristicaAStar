@@ -34,6 +34,9 @@ python versão-finalizada-lucas.py
 
 ## 📷 Screenshots
 
+### Mapa de Referência para a Atividade:
+![Mapa Referência](screenshots/mapa-referencia-atividade.PNG)
+
 ### Execução do Programa:
 ![Programa Rodando](screenshots/Programa-Rodando.PNG)
 
