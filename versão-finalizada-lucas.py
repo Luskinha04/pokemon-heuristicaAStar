@@ -25,7 +25,7 @@ POKEMON_BONUS = {
 }
 
 # Configuração do mapa
-tamanho_celula = 16
+tamanho_celula = 23
 tamanho_mapa = 42
 
 
