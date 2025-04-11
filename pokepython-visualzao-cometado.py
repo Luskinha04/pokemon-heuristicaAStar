@@ -384,6 +384,28 @@ def desenhar_mapa(
         sprite_jogador, (jogador[1] * tamanho_celula, jogador[0] * tamanho_celula)
     )
 
+    # Desenhar raio de alcance do radar em volta do jogador
+    alcance = 4  # mesmo valor usado no radar_pokedex
+    x, y = jogador
+
+    # Cálculo das bordas do quadrado de alcance
+    esquerda = max(0, y - alcance) * tamanho_celula
+    topo = max(0, x - alcance) * tamanho_celula
+    largura = (
+        min(tamanho_mapa - 1, y + alcance) - max(0, y - alcance) + 1
+    ) * tamanho_celula
+    altura = (
+        min(tamanho_mapa - 1, x + alcance) - max(0, x - alcance) + 1
+    ) * tamanho_celula
+
+    # Desenha o retângulo vermelho ao redor do alcance
+    pygame.draw.rect(
+        tela,
+        (255, 0, 0),  # Vermelho
+        (esquerda, topo, largura, altura),
+        2,  # Espessura da linha
+    )
+
     # Atualiza o conteúdo da tela com tudo que foi desenhado
     pygame.display.flip()
 
