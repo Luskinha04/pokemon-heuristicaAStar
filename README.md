@@ -41,11 +41,11 @@ python pokepython-visualzao.py
 ### Execução do Programa:
 ![Programa Rodando](screenshots/Programa-Rodando.PNG)
 
-### Resultados Finais no Terminal:
-![Resultados Printados](screenshots/resultados-printados.PNG)
-
 ### 🔥 Novo Mapa com Gráficos Aprimorados:
 ![Mapa com Gráficos Aprimorados](screenshots/MapaAtt.PNG)
+
+### Resultados Finais no Terminal:
+![Resultados Printados](screenshots/resultados-printados.PNG)
 
 ## 🧠 Lógica do Projeto
 
