@@ -28,7 +28,7 @@ pip install pygame
 3. Execute o programa:
 
 ```
-python versão-finalizada-lucas.py
+python pokepython-visualzao.py
 ```
 
 > Obs: Certifique-se de ter as imagens dos sprites (.png) na mesma pasta do código.
@@ -81,7 +81,7 @@ python versão-finalizada-lucas.py
  ┣ pokepython-visualzao.py # Versão com Sprites e Mapa Aprimorado
  ┣ versão-finalizada-lucas.py # Versão com mapa de esboço, apenas cores
  ┣ versão-teste1-lucas.py # Versão onde o jogador foca na ordem determinada no código antes de qualquer outra coisa
- ┣ pokepython-visualzao.py # Versão com comentários de cada etapa do código
+ ┣ pokepython-visualzao-comentado.py # Versão com comentários de cada etapa do código
  ┗ README.md
 ```
 
