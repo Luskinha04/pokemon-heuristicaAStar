@@ -9,7 +9,7 @@ O agente percorre um mapa 42x42, enfrentando diferentes terrenos com custos vari
 - Prioriza conquistar **insígnias** de ginásios.
 - Captura **Pokémons** visíveis próximos.
 - Se beneficia de **bônus de terreno** ao capturar Pokémons de tipos específicos.
-- Utiliza sprites personalizados e uma lava animada no estilo retrô.
+- Utiliza sprites personalizados e uma água e lava animada no estilo retrô.
 
 ## 🚀 Como executar
 
@@ -70,9 +70,13 @@ python pokepython-visualzao.py
  ┃ ┣ montanha.png
  ┃ ┣ caverna.png
  ┃ ┗ 📂lava/
- ┃   ┣ lava_00.png
+ ┃ ┃ ┣ lava_00.png
+ ┃ ┃ ┣ ...
+ ┃ ┃ ┗ lava_26.png
+ ┃ ┗ 📂agua/
+ ┃   ┣ agua_0.png
  ┃   ┣ ...
- ┃   ┗ lava_26.png
+ ┃   ┗ agua_5.png
  ┣ 📂screenshots/
  ┃ ┣ mapa-referencia-atividade.PNG
  ┃ ┣ MapaAtt.PNG
