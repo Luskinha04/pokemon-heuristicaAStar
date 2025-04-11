@@ -101,6 +101,13 @@ for i in range(27):
     imagem = pygame.transform.scale(imagem, (tamanho_celula, tamanho_celula))
     sprites_lava.append(imagem)
 
+# Carrega os frames da água animada
+sprites_agua = []
+for i in range(6):  # temos de agua_0.png até agua_5.png
+    frame = pygame.image.load(f"sprites/agua/agua_{i}.png")
+    frame = pygame.transform.scale(frame, (tamanho_celula, tamanho_celula))
+    sprites_agua.append(frame)
+
 
 def gerar_mapa():
     """Cria um mapa predefinido e distribui ginásios e pokémons ocultos."""
@@ -330,10 +337,13 @@ def desenhar_mapa(
             tipo = mapa[x][y]  # Tipo de terreno da célula atual
 
             # Se for terreno de vulcão (lava), aplica animação com base no frame atual
+            # Se for terreno de agua, aplica animação com base no frame atual
             if tipo == "V":
-                imagem = sprites_lava[frame_lava % len(sprites_lava)]
+                imagem = sprites_lava[frame_lava % len(sprites_lava)]  # Lava animada
+            elif tipo == "A":
+                imagem = sprites_agua[frame_lava % len(sprites_agua)]  # Água animada
             else:
-                imagem = sprite_terrenos.get(tipo)  # Busca imagem referente ao tipo
+                imagem = sprite_terrenos.get(tipo)
 
             if imagem:
                 # Desenha a imagem do terreno na tela, na posição correta
@@ -412,8 +422,8 @@ def main():
             if event.type == pygame.QUIT:
                 rodando = False
 
-        # Atualiza o frame da lava para simular animação
-        frame_lava = (frame_lava + 1) % len(sprites_lava)
+        # Atualiza o frame da lava e da agua para simular animação
+        frame_lava = (frame_lava + 1) % max(len(sprites_lava), len(sprites_agua))
 
         # Se o jogador já conquistou 8 insígnias, encerra o jogo
         if insignias >= 8:
