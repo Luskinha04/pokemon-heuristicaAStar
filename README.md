@@ -9,6 +9,7 @@ O agente percorre um mapa 42x42, enfrentando diferentes terrenos com custos vari
 - Prioriza conquistar **insígnias** de ginásios.
 - Captura **Pokémons** visíveis próximos.
 - Se beneficia de **bônus de terreno** ao capturar Pokémons de tipos específicos.
+- Utiliza sprites personalizados e uma lava animada no estilo retrô.
 
 ## 🚀 Como executar
 
@@ -43,6 +44,9 @@ python versão-finalizada-lucas.py
 ### Resultados Finais no Terminal:
 ![Resultados Printados](screenshots/resultados-printados.PNG)
 
+### 🔥 Novo Mapa com Gráficos Aprimorados:
+![Mapa com Gráficos Aprimorados](screenshots/MapaAtt.PNG)
+
 ## 🧠 Lógica do Projeto
 
 - O mapa possui terrenos com diferentes custos (`Grama`, `Água`, `Montanha`, `Caverna`, `Vulcão`).
@@ -54,14 +58,31 @@ python versão-finalizada-lucas.py
 
 ## 🎮 Controles
 
-Feche a janela do pygame para encerrar manualmente, ou aguarde o agente capturar 8 insígnias.
+- O agente se move automaticamente.
+- Feche a janela do pygame para encerrar manualmente, ou aguarde o agente capturar 8 insígnias.
 
 ## 📁 Estrutura de Arquivos
-
-- `jogador.png`, `ginasio.png`, `pokemon_agua.png`, etc.: sprites do jogo.
-- `screenshots/`: imagens utilizadas no README.
-- `versão-finalizada-lucas.py`: script principal do projeto.
-- `versão-teste1-lucas.py`: uma versão em que eu estava testando comandos do Python que ajudasse na atividade (irrelevante).
+```
+📦pokemon-heuristicaAStar/
+ ┣ 📂sprites/
+ ┃ ┣ agua.png
+ ┃ ┣ grama.png
+ ┃ ┣ montanha.png
+ ┃ ┣ caverna.png
+ ┃ ┗ 📂lava/
+ ┃   ┣ lava_00.png
+ ┃   ┣ ...
+ ┃   ┗ lava_26.png
+ ┣ 📂screenshots/
+ ┃ ┣ mapa-referencia-atividade.PNG
+ ┃ ┣ MapaAtt.PNG
+ ┃ ┣ Programa-Rodando.PNG
+ ┃ ┗ resultados-printados.PNG
+ ┣ pokepython-visualzao.py # Versão com Sprites e Mapa Aprimorado
+ ┣ versão-finalizada-lucas.py # Versão com mapa de esboço, apenas cores
+ ┣ versão-teste1-lucas.py # Versão onde o jogador foca na ordem determinada no código antes de qualquer outra coisa
+ ┗ README.md
+```
 
 ## 📊 Exemplo de Saída no Terminal
 
