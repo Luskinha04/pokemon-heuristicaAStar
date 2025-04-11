@@ -353,7 +353,7 @@ def desenhar_mapa(
     # Desenha o retângulo vermelho ao redor do alcance
     pygame.draw.rect(
         tela,
-        (255, 0, 0),  # Vermelho
+        (255, 255, 0),  # Amarelo
         (esquerda, topo, largura, altura),
         2,  # Espessura da linha
     )
